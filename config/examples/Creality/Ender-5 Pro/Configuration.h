@@ -21,7 +21,7 @@
  */
 #pragma once
 
-#define CONFIG_EXAMPLES_DIR "Creality/Ender-5"
+#define CONFIG_EXAMPLES_DIR "Creality/Ender-5 Pro"
 
 /**
  * Configuration.h
@@ -73,7 +73,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(thisiskeithb, Ender-5)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(thisiskeithb, Ender-5 Pro)" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -134,7 +134,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Ender-5"
+#define CUSTOM_MACHINE_NAME "Ender-5 Pro"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like http://www.uuidgenerator.net/version4
@@ -490,7 +490,7 @@
                                   // Set/get with gcode: M301 E[extruder number, 0-2]
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
-  // Creality Ender-5
+  // Creality Ender-5 Pro
   #define DEFAULT_Kp 21.73
   #define DEFAULT_Ki 1.54
   #define DEFAULT_Kd 76.55
@@ -750,7 +750,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 93 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -893,12 +893,6 @@
  *   (e.g., an inductive probe or a nozzle-based probe-switch.)
  */
 //#define FIX_MOUNTED_PROBE
-
-/**
- * Use the nozzle as the probe, as with a conductive
- * nozzle system or a piezo-electric smart effector.
- */
-//#define NOZZLE_AS_PROBE
 
 /**
  * Z Servo Probe, such as an endstop switch on a rotating arm.
